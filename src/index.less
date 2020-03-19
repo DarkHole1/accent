@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+
+  height: 100vh;
+  overflow: hidden;
+
+  background: #0f7e9b;
+  color: #92d7ef;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#word {
+  font-size: 50px;
+  transition: .5s;
+
+  &.hide {
+    opacity: 0%;
+  }
+}
+
+#word > * {
+  transition: .5s;
+}
+
+#word > .correct {
+  color: darken(#a2eae0, 30%);
+}
+
+#word > .incorrect {
+  color: #f9acbb;
+}

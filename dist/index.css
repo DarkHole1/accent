@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(https://fonts.gstatic.com/s/ubuntumono/v9/KFOjCneDtsqEr0keqCMhbCc6CsE.ttf) format('truetype');
+}
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  height: 100vh;
+  overflow: hidden;
+  background: #0f7e9b;
+  color: #92d7ef;
+}
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#word {
+  font-size: 50px;
+  transition: 0.5s;
+}
+#word.hide {
+  opacity: 0%;
+}
+#word > * {
+  transition: 0.5s;
+}
+#word > .correct {
+  color: #2dc6b1;
+}
+#word > .incorrect {
+  color: #f9acbb;
+}
